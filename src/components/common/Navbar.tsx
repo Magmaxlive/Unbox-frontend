@@ -1,10 +1,16 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { headerLinks } from '@/data/Links'
 import Button from './Button'
+import {Menu,X} from 'lucide-react'
 
 function Navbar() {
+    const [drawerOpen,setDrawerOpen] = useState(false)
+    const toggleNavbar = ()=>{
+        setDrawerOpen(!drawerOpen)
+    }
   return (
     <div className='bg-violet px-8 py-6'>
         <div className="flex items-center justify-between gap-5 max-w-7xl mx-auto">
@@ -19,8 +25,31 @@ function Navbar() {
                 ))}
            </div>
 
-           <Button/>
+           <div className="hidden lg:flex">
+            <Button/>
+           </div>
+
+           <div className="lg:hidden flex">
+            <button onClick={toggleNavbar} className='text-white font-bold cursor-pointer'>
+                {drawerOpen ?(
+                    <X />
+                ): (
+                    <Menu/>
+                )}
+            </button>
+           </div>   
         </div>
+        {drawerOpen && 
+            <div className="fixed right-0 z-20 w-full flex flex-col lg-hidden bg-violet p-8">
+                <ul className='flex flex-col gap-2'>
+                     {headerLinks.map((i,index)=>(
+                        <li>
+                            <Link className='hover:text-volt text-white capitalize font-semibold' key={index} href={i.link}>{i.label}</Link>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+           }
     </div>
   )
 }
