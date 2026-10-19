@@ -12,7 +12,7 @@ function Navbar() {
         setDrawerOpen(!drawerOpen)
     }
   return (
-    <div className='bg-violet px-8 py-6'>
+    <div className='sticky z-50 top-0 bg-violet px-8 py-6 border-b border-soft/20'>
         <div className="flex items-center justify-between gap-5 max-w-7xl mx-auto">
 
            <div className="relative w-32 aspect-[2019/514] shrink-0">

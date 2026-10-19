@@ -45,11 +45,19 @@
   --color-food: #f94f21;
   --color-tour: #ffb624;
   --color-edu: #18d641;
-  --color-fg-soft: rgb(255 255 255 / 0.78);
+  --color-soft: rgb(255 255 255 / 0.78);
 }
 
 
 
 body {
   font-family: var(--font-body);
+}
+
+@keyframes slam {
+  from { transform: translateX(40px); opacity: 0; }
+}
+
+@keyframes rise {
+  from { transform: translateY(60px); }
 }
