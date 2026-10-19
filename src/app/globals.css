@@ -19,24 +19,23 @@
  
 }
 
-@theme inline {
+@theme {
   --font-body: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
   --font-display: var(--font-syne), "Arial Black", "Helvetica Neue", sans-serif;
 
-  --color-violet: var(--violet);
-  --color-violet-deep: var(--violet-deep);
-  --color-volt: var(--volt);
-  --color-cyan: var(--cyan);
-  --color-ink: var(--ink);
-  --color-white: var(--white);
-  --color-politics: var(--c-politics);
-  --color-tech: var(--c-tech);
-  --color-culture: var(--c-culture);
-  --color-life: var(--c-life);
-  --color-food: var(--c-food);
-  --color-tour: var(--c-tour);
-  --color-edu: var(--c-edu);
-  --color-fg-soft: var(--fg-soft);
+  --color-violet: #6a2ffc;
+  --color-violet-deep: #4f17d9;
+  --color-volt: #fefc28;
+  --color-cyan: #24daff;
+  --color-ink: #111111;
+  --color-politics: #1d75dd;
+  --color-tech: #00e0ca;
+  --color-culture: #d31ae2;
+  --color-life: #ef1b1b;
+  --color-food: #f94f21;
+  --color-tour: #ffb624;
+  --color-edu: #18d641;
+  --color-fg-soft: rgb(255 255 255 / 0.78);
 }
 
 
