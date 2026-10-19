@@ -1,26 +1,46 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+  --violet: #6A2FFC;
+  --violet-deep: #4F17D9;
+  --volt: #FEFC28;
+  --cyan: #24DAFF;
+  --ink: #111111;
+  --white: #FFFFFF;
+  --c-politics: #1D75DD;
+  --c-tech: #00E0CA;
+  --c-culture: #D31AE2;
+  --c-life: #EF1B1B;
+  --c-food: #F94F21;
+  --c-tour: #FFB624;
+  --c-edu: #18D641;
+  --fg-soft: rgba(255, 255, 255, .78);
+ 
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-body: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-syne), "Arial Black", "Helvetica Neue", sans-serif;
+
+  --color-violet: var(--violet);
+  --color-violet-deep: var(--violet-deep);
+  --color-volt: var(--volt);
+  --color-cyan: var(--cyan);
+  --color-ink: var(--ink);
+  --color-white: var(--white);
+  --color-politics: var(--c-politics);
+  --color-tech: var(--c-tech);
+  --color-culture: var(--c-culture);
+  --color-life: var(--c-life);
+  --color-food: var(--c-food);
+  --color-tour: var(--c-tour);
+  --color-edu: var(--c-edu);
+  --color-fg-soft: var(--fg-soft);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
 }
