@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: "Brachial";
+  src: url("/fonts/brachial.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
 
   --violet: #6A2FFC;
@@ -16,12 +24,12 @@
   --c-tour: #FFB624;
   --c-edu: #18D641;
   --fg-soft: rgba(255, 255, 255, .78);
- 
+
 }
 
 @theme {
   --font-body: var(--font-inter), "Helvetica Neue", Arial, sans-serif;
-  --font-display: var(--font-syne), "Arial Black", "Helvetica Neue", sans-serif;
+  --font-heading: "Brachial", "Arial Black", "Helvetica Neue", sans-serif;
 
   --color-violet: #6a2ffc;
   --color-violet-deep: #4f17d9;
