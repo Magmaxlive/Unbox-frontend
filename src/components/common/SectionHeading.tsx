@@ -18,13 +18,13 @@ function SectionHeading({eyebrow,main,description,eyebrowBg='bg-white',eyebrowCo
       }
 
       {main &&
-        <div className={`uppercase tracking-normal font-heading text-3xl md:text-5xl`}>
+        <div className={`uppercase tracking-normal font-heading text-3xl md:text-5xl lg:text-6xl`}>
             {main}
         </div>
       }
 
       {description &&
-        <p className={`${paraColor}`}>
+        <p className={`${paraColor} max-w-lg mt-3`}>
             {description}
         </p>
       }
