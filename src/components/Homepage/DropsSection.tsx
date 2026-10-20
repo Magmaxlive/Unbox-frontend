@@ -2,6 +2,7 @@ import React from 'react'
 import SectionHeading from '../common/SectionHeading'
 import VideoCard from '../common/VideoCard'
 import { sample } from '@/data/DropSample'
+import WeeksCard from '../common/WeeksCard'
 
 function DropsSection() {
   return (
@@ -40,6 +41,11 @@ function DropsSection() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="flex justify-between md:flex-row flex-col gap-4">
+          <p className="text-soft/80 text-sm">One drop a day, every day. Here's this week:</p>
+          <WeeksCard/>
         </div>
       </div>
     </div>

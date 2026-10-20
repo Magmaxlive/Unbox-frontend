@@ -68,7 +68,7 @@ function HeroSection() {
             <div className="order-1 tablet:order-2 relative z-10 grid gap-6 content-end pt-6 pb-10 tablet:pt-10 tablet:pb-16 text-white">
                 <span className="inline-flex items-center gap-2 w-fit px-3 py-1.5 bg-ink text-xs uppercase tracking-widest font-semibold">
                     <i className="w-2 h-2 rounded-full bg-red-500 inline-block" />
-                    New drop every day · Aotearoa
+                    New drop every day · New zealand
                 </span>
 
                 <h1 className="font-heading leading-[0.95] text-[clamp(2.6rem,7.4vw,6.1rem)] font-display uppercase">
@@ -79,7 +79,7 @@ function HeroSection() {
                 </h1>
 
                 <p className="max-w-[44ch] text-[1.12rem] text-fg-soft">
-                    Sixty-second stories from Aotearoa, told straight. <b className="text-white font-semibold">Politics, neighbourhoods, food, fashion, tech and the world</b>, from the people living it.
+                    Sixty-second stories from New Zealand, told straight. <b className="text-white font-semibold">Politics, neighbourhoods, food, fashion, tech and the world</b>, from the people living it.
                 </p>
 
                 <div className="flex flex-wrap items-center gap-x-6 gap-y-4">

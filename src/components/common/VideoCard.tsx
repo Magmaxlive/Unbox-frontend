@@ -46,7 +46,7 @@ function VideoCard({
                 <span className={`px-2 py-1 text-white font-heading uppercase text-xs tracking-wider ${categoryColor}`}>
                     {category}
                 </span>
-                <span className="text-white font-heading text-xs tabular-nums bg-ink p-1">{duration}</span>
+                <span className="text-white font-heading text-xs tabular-nums bg-ink/50 p-1">{duration}</span>
             </div>
 
             <div className="relative flex flex-col gap-2">
