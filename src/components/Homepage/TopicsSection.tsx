@@ -89,7 +89,7 @@ function TopicsSection() {
   return (
     <div className='bg-white px-8 py-20'>
       <div className="flex flex-col gap-10 max-w-7xl mx-auto">
-        <SectionHeading eyebrow='topics' main='Pick your colour.' eyebrowBg='bg-black' eyebrowColor='text-white'
+        <SectionHeading eyebrow='topics' main={<>Pick your <br/> <span className='text-gray-800'>colour.</span></>} eyebrowBg='bg-black' eyebrowColor='text-white'
         description="Every story carries its topic colour, so you know what you're opening before it plays." />
 
         <div className="grid grid-cols-1 md:grid-cols-2 tablet:grid-cols-4">
