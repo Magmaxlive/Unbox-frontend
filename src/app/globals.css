@@ -27,6 +27,7 @@
   --c-edu: #18D641;
   --fg-soft: rgba(255, 255, 255, .78);
 
+
 }
 
 @theme {
@@ -46,6 +47,7 @@
   --color-tour: #ffb624;
   --color-edu: #18d641;
   --color-soft: rgb(255 255 255 / 0.78);
+  --color-transparentbg:#ffffff14;
 }
 
 
