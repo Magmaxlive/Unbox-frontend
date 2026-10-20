@@ -1,5 +1,7 @@
 import React from 'react'
 import SectionHeading from '../common/SectionHeading'
+import VideoCard from '../common/VideoCard'
+import { sample } from '@/data/DropSample'
 
 function DropsSection() {
   return (
@@ -17,6 +19,27 @@ function DropsSection() {
             <p className="text-soft max-w-sm">
                 Every upload runs one minute. Tap a story to start its clock. This lineup is a sample of the daily format.
             </p>
+        </div>
+
+        {/* lg+ static grid */}
+        <div className="hidden lg:grid grid-cols-5 gap-5">
+          {sample.map((i, index) => (
+            <VideoCard key={index} category={i.category} title={i.title} location={i.location} time={i.time} image={i.image} />
+          ))}
+        </div>
+
+        {/* below lg - scrollable grid (looks like grid at rest) */}
+        <div className="lg:hidden overflow-x-auto snap-x snap-mandatory">
+          <div className="flex gap-5">
+            {sample.map((i, index) => (
+              <div
+                key={index}
+                className="snap-start shrink-0 w-full md:w-[calc((100%-2.5rem)/3)] tablet:w-[calc((100%-3.75rem)/4)]"
+              >
+                <VideoCard category={i.category} title={i.title} location={i.location} time={i.time} image={i.image} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
