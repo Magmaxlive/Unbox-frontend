@@ -1,3 +1,4 @@
+import ContactSection from "@/components/Homepage/ContactSection";
 import DropsSection from "@/components/Homepage/DropsSection";
 import HeroSection from "@/components/Homepage/HeroSection";
 import MarqueeSection from "@/components/Homepage/MarqueeSection";
@@ -15,6 +16,7 @@ export default function Home() {
       <TopicsSection/>
       <SixtysecondsSection/>
       <StoriesSection/>
+      <ContactSection/>
     </div>
   );
 }

@@ -45,7 +45,7 @@ const audienceCards= [
 
 function StoriesSection() {
   return (
-    <div className='bg-white px-8 py-20'>
+    <div className='bg-white px-8 py-20 scroll-mt-25' id='who'>
         <div className="flex flex-col gap-8 max-w-7xl mx-auto">
             <SectionHeading eyebrow='Real people · real context'
             eyebrowBg='bg-cyan'
