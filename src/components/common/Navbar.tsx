@@ -40,7 +40,7 @@ function Navbar() {
            </div>   
         </div>
         {drawerOpen && 
-            <div className="fixed right-0 top-full z-20 w-full flex flex-col lg:hidden bg-violet p-8 gap-6">
+            <div className="fixed right-0 z-20 w-full flex flex-col lg:hidden bg-violet p-8 gap-6">
                 <ul className='flex flex-col gap-2'>
                      {headerLinks.map((i,index)=>(
                         <li>
