@@ -21,12 +21,12 @@ export default function RootLayout({ children, }: LayoutProps<"/">) {
       lang="en"
       className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-screen flex flex-col">
         <Providers>
           <Navbar/>
-        
+        <main className='flex-1'>
             {children}
-       
+       </main>
           <Footer/>
         </Providers>
       </body>
