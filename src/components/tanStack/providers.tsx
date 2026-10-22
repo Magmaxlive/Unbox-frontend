@@ -6,7 +6,7 @@ interface ProvidersProps {
     children: ReactNode;
 }
 
-function providers({children}:ProvidersProps) {
+function Providers({children}:ProvidersProps) {
     const [queryClient] = useState(()=> new QueryClient());
   return (
     <QueryClientProvider client={queryClient}>
@@ -15,4 +15,4 @@ function providers({children}:ProvidersProps) {
   )
 }
 
-export default providers
+export default Providers
