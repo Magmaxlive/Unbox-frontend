@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionHeading from '../common/SectionHeading'
 import Image from 'next/image'
+import PitchForm from '../common/PitchForm'
 
 function ContactSection() {
   return (
@@ -15,6 +16,8 @@ function ContactSection() {
                 <Image src='/images/collage.webp' fill alt='Collage' className='object-contain scale-100' />
             </div>
         </div>
+
+        <PitchForm/>
         
       </div>
     </div>
