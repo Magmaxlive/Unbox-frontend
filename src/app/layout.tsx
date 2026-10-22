@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import Providers from "@/components/tanStack/providers";
+import Footer from "@/components/common/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,6 +27,7 @@ export default function RootLayout({ children, }: LayoutProps<"/">) {
           <main className="flex-1">
             {children}
           </main>
+          <Footer/>
         </Providers>
       </body>
     </html>

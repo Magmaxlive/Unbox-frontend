@@ -26,7 +26,7 @@ const features: FeatureProps[] = [
 
 function SixtysecondsSection() {
   return (
-    <div className='py-20 px-8 bg-violet'>
+    <div className='py-20 px-8 bg-violet scroll-mt-25' id='60s'>
       <div className="grid grid-cols-1 tablet:grid-cols-2 gap-10 max-w-7xl mx-auto">
         {/* left div */}
         <div className="flex flex-col gap-2">

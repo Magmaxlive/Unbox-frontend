@@ -6,7 +6,7 @@ import WeeksCard from '../common/WeeksCard'
 
 function DropsSection() {
   return (
-    <div className='bg-ink px-8 py-20'>
+    <div className='bg-ink px-8 py-20 scroll-mt-25' id='today'>
       <div className="flex flex-col max-w-7xl mx-auto gap-8">
         
             <SectionHeading eyebrow="Today's drops"

@@ -5,7 +5,7 @@ import PitchForm from '../common/PitchForm'
 
 function ContactSection() {
   return (
-    <div className='bg-ink px-8 py-20'>
+    <div className='bg-ink px-8 py-20 scroll-mt-25' id='pitchStory'>
       <div className="grid grid-cols-1 tablet:grid-cols-2 gap-15 max-w-7xl mx-auto">
         <div className="flex flex-col gap-6">
             <SectionHeading eyebrow='Your turn' eyebrowBg='bg-volt' main={
