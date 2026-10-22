@@ -1,6 +1,6 @@
 import {z} from "zod";
 
-export const contactSchema = z.object({
+export const pitchSchema = z.object({
     name : z.string().trim().min(2,'Name is required'),
     email : z.email({error:'Enter a valid email address'}),
     story : z.string().trim().min(10,'Message must be at least 10 characters'),
@@ -11,4 +11,4 @@ export const contactSchema = z.object({
 
 })
 
-export type ContactFormData = z.infer<typeof contactSchema>;
+export type PitchFormData = z.infer<typeof pitchSchema>;
