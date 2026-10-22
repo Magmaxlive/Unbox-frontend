@@ -12,7 +12,7 @@ function Navbar() {
         setDrawerOpen(!drawerOpen)
     }
   return (
-    <div className='sticky z-50 top-0 bg-violet px-8 py-6 border-b border-soft/20'>
+    <div className='stickybackdrop-blur-lg z-50 top-0 bg-violet px-8 py-6 border-b border-soft/20'>
         <div className="flex items-center justify-between gap-5 max-w-7xl mx-auto">
 
            <div className="relative w-32 aspect-[2019/514] shrink-0">
@@ -40,7 +40,7 @@ function Navbar() {
            </div>   
         </div>
         {drawerOpen && 
-            <div className="fixed right-0 z-20 w-full flex flex-col lg:hidden bg-violet p-8 gap-6">
+            <div className="absolute right-0 z-20 w-full flex flex-col lg:hidden bg-violet p-8 gap-6">
                 <ul className='flex flex-col gap-2'>
                      {headerLinks.map((i,index)=>(
                         <li>
