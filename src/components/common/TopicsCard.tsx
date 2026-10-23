@@ -36,16 +36,16 @@ function TopicsCard({
         }}
       />
 
-      <h6 style={{ color: eyebrowColor }} className="relative uppercase font-bold text-xs">
+      <h6 style={{ color: eyebrowColor }} className="relative uppercase tracking-widest font-bold text-xs">
         {eyebrow}
       </h6>
 
-      <div className="relative flex flex-col gap-2">
+      <div className="relative flex flex-col gap-3">
         <h2 style={{ color: titleColor }} className="text-xl lg:text-2xl font-heading uppercase">
           {title}
         </h2>
 
-        <p style={{ color: descriptionColor }} className="text-sm">
+        <p style={{ color: descriptionColor }} className="text font-medium">
           {description}
         </p>
       </div>

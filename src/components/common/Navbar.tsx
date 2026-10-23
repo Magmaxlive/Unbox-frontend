@@ -43,7 +43,7 @@ function Navbar() {
             <div className="absolute right-0 z-20 w-full flex flex-col lg:hidden bg-violet p-8 gap-6">
                 <ul className='flex flex-col gap-2'>
                      {headerLinks.map((i,index)=>(
-                        <li>
+                        <li key={index}>
                             <Link className='hover:text-volt text-white capitalize font-semibold' key={index} href={i.link}>{i.label}</Link>
                         </li>
                     ))}

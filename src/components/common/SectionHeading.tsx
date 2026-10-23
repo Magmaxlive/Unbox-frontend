@@ -26,7 +26,7 @@ function SectionHeading({eyebrow,main,description,eyebrowBg='bg-white',eyebrowCo
       </div>
 
       {description &&
-        <p className={`${paraColor} max-w-sm text-sm mt-3 font-medium tablet:self-end`}>
+        <p className={`${paraColor} max-w-sm text mt-3 font-medium tablet:self-end`}>
             {description}
         </p>
       }

@@ -61,7 +61,7 @@ function SixtysecondsSection() {
                     <h3 className="font-heading text-xl uppercase text-white">
                         {i.title}
                     </h3>
-                    <p className="text-sm text-white">
+                    <p className="text text-soft">
                         {i.description}
                     </p>
                 </div>

@@ -78,7 +78,7 @@ function HeroSection() {
                     <span className="block text-volt animate-[slam_0.7s_cubic-bezier(.2,.8,.2,1)_both] [animation-delay:0.24s]">matters.</span>
                 </h1>
 
-                <p className="max-w-[44ch] text-[1.12rem] text-fg-soft">
+                <p className="max-w-[44ch] text-[1.12rem] text-soft">
                     Sixty-second stories from New Zealand, told straight. <b className="text-white font-semibold">Politics, neighbourhoods, food, fashion, tech and the world</b>, from the people living it.
                 </p>
 
